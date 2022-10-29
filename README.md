@@ -1,3 +1,4 @@
 # MY FIRST ATTEMPT WITH GO
 
-This is just a hello world!
+This a Go program
+Carefully commited for easy reading
