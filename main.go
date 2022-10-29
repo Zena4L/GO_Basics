@@ -4,15 +4,21 @@ package main
 import "log"
 
 // Every go package must consist of at least on function i.e main function
+// Functions are declared with "func" keyword
+// Unitialized int is asigned to 0
+// _ means ignore that value
+
 func main(){
 	// Variable declaration
-	var whatToSay string= saySomething("Hello world")
+	
+	var whatToSay string
+	whatToSay,_= saySomething("Hello world")
 
 	log.Println(whatToSay)
 
 }
 
 
-func saySomething(s string) string{
-	return s
+func saySomething(s string) (string,string){
+	return s, "Goodbye"
 }
